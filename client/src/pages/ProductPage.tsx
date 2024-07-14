@@ -1,8 +1,12 @@
 import { Helmet } from "react-helmet-async";
 
 export default function ProductPage() {
-  <Helmet>
-    <title>Product Page</title>
-  </Helmet>;
-  return <div>ProductPage</div>;
+  return (
+    <>
+      <Helmet>
+        <title>Product Page</title>
+      </Helmet>
+      <div>ProductPage</div>
+    </>
+  );
 }
