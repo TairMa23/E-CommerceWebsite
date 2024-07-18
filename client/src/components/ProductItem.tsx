@@ -3,9 +3,10 @@ import { Product } from "../types/Product";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
 import { useContext } from "react";
-import { Store } from "../store";
+import { Store } from "../Store";
 import { CartItem } from "../types/Crt";
 import { convertProductToCartItem } from "../utils";
+import { toast } from "react-toastify";
 
 function ProductItem({ product }: { product: Product }) {
   const { state, dispatch } = useContext(Store);
@@ -23,6 +24,7 @@ function ProductItem({ product }: { product: Product }) {
       type: "CART_ADD_ITEM",
       payload: { ...item, quantity },
     });
+    toast.success("Product added to cart");
   };
   return (
     <Card>

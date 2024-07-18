@@ -14,7 +14,7 @@ import HomePage from "./pages/HomePage.tsx";
 import ProductPage from "./pages/ProductPage.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { StoreProvider } from "./store.tsx";
+import { StoreProvider } from "./Store.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
