@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Rating from "./Rating";
 import { useContext } from "react";
 import { Store } from "../Store";
-import { CartItem } from "../types/Crt";
+import { CartItem } from "../types/Cart";
 import { convertProductToCartItem } from "../utils";
 import { toast } from "react-toastify";
 

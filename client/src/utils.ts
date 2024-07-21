@@ -1,5 +1,5 @@
 import { ApiError } from "./types/ApiError";
-import { CartItem } from "./types/Crt";
+import { CartItem } from "./types/Cart";
 import { Product } from "./types/Product";
 
 export const getError = (error: ApiError) => {
