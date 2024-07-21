@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,12 +15,14 @@
 .rating span {
   color: #ffc000;
 }
+
 img.large {
   max-width: 100%;
 }
 img.thumbnail {
   height: 80px;
 }
+
 .small-container {
   max-width: 600px;
 }
@@ -36,5 +38,51 @@ img.thumbnail {
 
 .dropdown-menu[data-bs-popper] {
   left: auto;
-  right: 0px;
+  right: 0;
+}
+.btn-primary,
+.btn-outline-primary {
+  background-color: #f0c040;
+  color: #000000;
+}
+
+/* header */
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+a.header-link,
+.header-link > a {
+  border: 1px rgb(33, 37, 41) solid;
+  border-radius: 2px;
+  color: white !important;
+  font-weight: bold;
+}
+
+a.header-link:hover,
+.header-link > a:hover {
+  color: white;
+  border: 1px white solid;
+}
+
+.header .dropdown-menu,
+.header .dropdown-item {
+  color: black !important;
+  background-color: white;
+}
+.header .dropdown-item a:hover {
+  border: 1px rgb(33, 37, 41) solid;
+}
+.sub-header {
+  background-color: #232f3e;
+}
+
+.cart-badge {
+  position: absolute;
+  color: #f08000;
+  font-weight: bold;
+  margin-left: 16px;
+  margin-top: -3px;
 }
