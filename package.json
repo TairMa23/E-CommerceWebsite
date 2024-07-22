@@ -2,5 +2,21 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "mongodb": "^6.8.0"
-  }
+  },
+  "name": "e-commercewebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "cd server && npm install && npm run build  && cd ../client && npm install && npm run build",
+    "start": "TG_ALLOW_MIXED=ALLOW  node server/build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TairMa23/E-CommerceWebsite.git"
+  },
+  "author": "",
+  "license": "ISC"
 }

@@ -1,10 +1,11 @@
 import {
+  DISPATCH_ACTION,
   PayPalButtons,
   PayPalButtonsComponentProps,
   SCRIPT_LOADING_STATE,
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { Button, Card, Col, ListGroup, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
@@ -16,14 +17,10 @@ import {
   useGetPaypalClientIdQuery,
   usePayOrderMutation,
 } from "../hooks/orderHooks";
-import { Store } from "../Store";
 import { ApiError } from "../types/ApiError";
 import { getError } from "../utils";
 
 export default function OrderPage() {
-  const { state } = useContext(Store);
-  const { userInfo } = state;
-
   const params = useParams();
   const { id: orderId } = params;
 
@@ -34,7 +31,7 @@ export default function OrderPage() {
     refetch,
   } = useGetOrderDetailsQuery(orderId!);
 
-  const { mutateAsync: payOrder, isLoading: loadingPay } =
+  const { mutateAsync: payOrder, isPending: loadingPay } =
     usePayOrderMutation();
 
   const testPayHandler = async () => {
@@ -51,29 +48,31 @@ export default function OrderPage() {
     if (paypalConfig && paypalConfig.clientId) {
       const loadPaypalScript = async () => {
         paypalDispatch({
-          type: "resetOptions",
+          type: DISPATCH_ACTION.RESET_OPTIONS,
           value: {
-            "client-id": paypalConfig!.clientId,
+            clientId: paypalConfig!.clientId,
             currency: "USD",
           },
         });
         paypalDispatch({
-          type: "setLoadingStatus",
+          type: DISPATCH_ACTION.LOADING_STATUS,
           value: SCRIPT_LOADING_STATE.PENDING,
         });
       };
       loadPaypalScript();
     }
-  }, [paypalConfig]);
+  }, [paypalConfig, paypalDispatch]);
 
   const paypalbuttonTransactionProps: PayPalButtonsComponentProps = {
     style: { layout: "vertical" },
-    createOrder(data, actions) {
+    createOrder(_data, actions) {
       return actions.order
         .create({
+          intent: "CAPTURE",
           purchase_units: [
             {
               amount: {
+                currency_code: "USD", // Add this line
                 value: order!.totalPrice.toString(),
               },
             },
@@ -83,7 +82,7 @@ export default function OrderPage() {
           return orderID;
         });
     },
-    onApprove(data, actions) {
+    onApprove(_data, actions) {
       return actions.order!.capture().then(async (details) => {
         try {
           await payOrder({ orderId: orderId!, ...details });
@@ -102,7 +101,9 @@ export default function OrderPage() {
   return isLoading ? (
     <LoadingBox></LoadingBox>
   ) : error ? (
-    <MessageBox variant="danger">{getError(error as ApiError)}</MessageBox>
+    <MessageBox variant="danger">
+      {getError(error as unknown as ApiError)}
+    </MessageBox>
   ) : !order ? (
     <MessageBox variant="danger">Order Not Found</MessageBox>
   ) : (

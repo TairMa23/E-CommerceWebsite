@@ -1,6 +1,5 @@
 import { useContext, useEffect } from "react";
 import {
-  Badge,
   Button,
   Container,
   Form,
