@@ -13,7 +13,7 @@ import { Link, Outlet } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Store } from "./Store";
+import { Store } from "./Store.tsx";
 
 function App() {
   const {
