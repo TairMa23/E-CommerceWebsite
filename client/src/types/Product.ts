@@ -1,13 +1,13 @@
 export type Product = {
-  _id: string;
   name: string;
   slug: string;
-  image: string;
-  category: string;
-  brand: string;
+  url: string;
+  color?: string;
   price: number;
   countInStock: number;
-  description: string;
   rating: number;
   numReviews: number;
+  description: string;
+  category: string;
+  style?: string;
 };

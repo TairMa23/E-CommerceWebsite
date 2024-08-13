@@ -15,21 +15,25 @@ function ProductItem({ product }: { product: Product }) {
   } = state;
   const addToCartHandler = (item: CartItem) => {
     const existItem = cartItems.find((x) => x._id === product._id);
-    const quantity = existItem ? existItem.quantity + 1 : 1;
-    if (product.countInStock < quantity) {
+    const countInStock = existItem ? existItem.countInStock + 1 : 1;
+    if (product.countInStock < countInStock) {
       alert("Sorry. Product is out of stock");
       return;
     }
     dispatch({
       type: "CART_ADD_ITEM",
-      payload: { ...item, quantity },
+      payload: { ...item, countInStock },
     });
     toast.success("Product added to cart");
   };
   return (
     <Card>
       <Link to={`/product/${product.slug}`}>
-        <img src={product.image} className="card-img-top" alt={product.name} />
+        <img
+          src={product.url}
+          className="product-image card-img-top"
+          alt={product.name}
+        />
       </Link>
       <Card.Body>
         <Link to={`/product/${product.slug}`}>

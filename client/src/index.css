@@ -86,3 +86,15 @@ a.header-link:hover,
   margin-left: 16px;
   margin-top: -3px;
 }
+.product-image {
+  width: 100%;
+  max-width: 400px;
+  height: 150px; /* גובה קבוע */
+  object-fit: cover; /* זה ישמור על התמונה בגודל הקבוע ויחתוך את התמונה אם נדרש */
+}
+.product-row {
+  margin-top: 10px; /* מרווח בין שורות של מוצרים */
+}
+.product-col {
+  padding-bottom: 20px; /* מרווח בין המוצרים בתוך כל שורה */
+}

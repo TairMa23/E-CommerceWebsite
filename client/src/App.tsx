@@ -57,8 +57,8 @@ function App() {
                   type="text"
                   name="q"
                   id="q"
-                  placeholder="Search Amazona"
-                  aria-label="Search Amazona"
+                  placeholder="Search HomeLine"
+                  aria-label="Search HomeLine"
                   aria-describedby="button-search"
                 ></FormControl>
                 <Button

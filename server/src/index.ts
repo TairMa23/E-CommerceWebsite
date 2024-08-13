@@ -12,7 +12,7 @@ import { userRouter } from "./routers/userRouter";
 dotenv.config();
 
 const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://localhost/tsmernamazonadb";
+  process.env.MONGODB_URI || "mongodb://localhost/nodemongocrud_db";
 mongoose.set("strictQuery", true);
 mongoose
   .connect(MONGODB_URI)
@@ -27,7 +27,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:5174"],
+    origin: ["http://localhost:5173"],
   })
 );
 

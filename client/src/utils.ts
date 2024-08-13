@@ -7,6 +7,7 @@ export const getError = (error: ApiError) => {
     ? error.response.data.message
     : error.message;
 };
+
 export const convertProductToCartItem = (product: Product): CartItem => {
   const cartItem: CartItem = {
     _id: product._id,
@@ -16,6 +17,10 @@ export const convertProductToCartItem = (product: Product): CartItem => {
     price: product.price,
     countInStock: product.countInStock,
     quantity: 1,
+    color: product.color, // New field
+    style: product.style, // New field
+    dimensions: product.dimensions, // New field
+    material: product.material, // New field
   };
   return cartItem;
 };

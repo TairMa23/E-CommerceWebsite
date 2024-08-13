@@ -27,14 +27,14 @@ export default function ProductPage() {
 
   const addToCartHandler = () => {
     const existItem = cart.cartItems.find((x) => x._id === product!._id);
-    const quantity = existItem ? existItem.quantity + 1 : 1;
-    if (product!.countInStock < quantity) {
+    const countInStock = existItem ? existItem.countInStock + 1 : 1;
+    if (product!.countInStock < countInStock) {
       toast.warn("Sorry. Product is out of stock");
       return;
     }
     dispatch({
       type: "CART_ADD_ITEM",
-      payload: { ...convertProductToCartItem(product!), quantity },
+      payload: { ...convertProductToCartItem(product!), countInStock },
     });
     toast.success("Product added to the cart");
     navigate("/cart");
@@ -51,7 +51,7 @@ export default function ProductPage() {
     <div>
       <Row>
         <Col md={6}>
-          <img className="large" src={product.image} alt={product.name}></img>
+          <img className="large" src={product.url} alt={product.name}></img>
         </Col>
         <Col md={3}>
           <ListGroup variant="flush">

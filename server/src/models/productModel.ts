@@ -2,8 +2,6 @@ import { modelOptions, prop, getModelForClass } from "@typegoose/typegoose";
 
 @modelOptions({ schemaOptions: { timestamps: true } })
 export class Product {
-  public _id?: string;
-
   @prop({ required: true })
   public name!: string;
 
@@ -11,16 +9,10 @@ export class Product {
   public slug!: string;
 
   @prop({ required: true })
-  public image!: string;
+  public url!: string;
 
   @prop({ required: true })
-  public brand!: string;
-
-  @prop({ required: true })
-  public category!: string;
-
-  @prop({ required: true })
-  public description!: string;
+  public color!: string;
 
   @prop({ required: true, default: 0 })
   public price!: number;
@@ -33,6 +25,15 @@ export class Product {
 
   @prop({ required: true, default: 0 })
   public numReviews!: number;
+
+  @prop({ required: true })
+  public description!: string;
+
+  @prop({ required: true })
+  public category!: string;
+
+  @prop({ required: true })
+  public style!: string;
 }
 
 export const ProductModel = getModelForClass(Product);

@@ -1,0 +1,211 @@
+[
+  {
+    "id": 1,
+    "name": "modern living room",
+    "url": "https://img.freepik.com/premium-photo/cozy-modern-living-room-interior-have-sofa-decor-accessories-with-white-color-wall-3d-rendering_1199132-190267.jpg?w=826",
+    "color": "white",
+    "category": "living room",
+    "style": "Modern",
+    "dimensions": "3000x2000px / JPG",
+    "material": " "
+  },
+  {
+    "id": 2,
+    "name": "modern kitchen",
+    "url": "https://img.freepik.com/premium-photo/minimalist-kitchen-with-white-cabinets-simple-sink-clean-countertops_1167636-1022.jpg?w=900",
+    "color": "white",
+    "category": "kitchen",
+    "style": "modern",
+    "dimensions": "50x50x100 cm",
+    "material": " "
+  },
+  {
+    "id": 3,
+    "name": "Modern bedroom",
+    "url": "https://img.freepik.com/free-photo/modern-luxury-bedding-with-cozy-lighting-elegance-generated-by-ai_188544-16336.jpg?t=st=1722796252~exp=1722799852~hmac=c63ac5837a862d3bf82a65e8ff6768874b15d992e252f20f591bb3b768ee3bb2&w=900",
+    "color": "White ,wood",
+    "category": "bedroom",
+    "style": "Modern",
+    "dimensions": "6067x3467px / JPG",
+    "material": " "
+  },
+  {
+    "id": 4,
+    "name": "Classic living room",
+    "url": "https://img.freepik.com/free-photo/neoclassical-style-interior-design-with-decor-furnishings_23-2151199392.jpg?t=st=1722795956~exp=1722799556~hmac=23cb88fbba7ea47a1818839ac4ec4af02e9323b0a25d655f93b3da8624d9ca33&w=900",
+    "color": "White , lightpink",
+    "category": "living room",
+    "style": "Classic",
+    "dimensions": "5824x3264px / JPG",
+    "material": " "
+  },
+  {
+    "id": 5,
+    "name": "Classic kitchen",
+    "url": "https://img.freepik.com/premium-photo/bar-with-stools-bar-with-light-wall-it_1220445-12394.jpg?w=900",
+    "color": "White , wood",
+    "category": "kitchen",
+    "style": "Classic",
+    "dimensions": "6240x4160px / JPG",
+    "material": " "
+  },
+  {
+    "id": 6,
+    "name": "Classic bedroom",
+    "url": "https://img.freepik.com/free-photo/bedroom-background-zoom-calls_52683-95239.jpg?t=st=1722797925~exp=1722801525~hmac=889763d37a359867d086c55781b3be157830f37bd725c32a6190fa3fc15ad2b8&w=900",
+    "color": "Brown , White ,  gray ,  wood",
+    "category": "bedroom",
+    "style": "Classic",
+    "dimensions": "8000x5334px / JPG",
+    "material": " "
+  },
+  {
+    "id": 7,
+    "name": "Vintage living room",
+    "url": "https://img.freepik.com/premium-photo/luxurious-light-interior-baroque-style-spacious-room-with-road-chic-beautiful-furniture-fireplace-flowers-plant-stucco-walls-light-wood-parquet_267786-3707.jpg?w=900",
+    "color": "white , Light Blue ",
+    "category": "living room",
+    "style": "Vintage",
+    "dimensions": "3000x2000px / JPG",
+    "material": ""
+  },
+  {
+    "id": 8,
+    "name": "Vintage kitchen",
+    "url": "https://img.freepik.com/free-photo/view-castle-kitchen_23-2150844333.jpg?t=st=1722797144~exp=1722800744~hmac=101ea8bedfbd2b6d7c9c3677fb4d93fcdaab711d88f38f5297387d734ab08ce0&w=900",
+    "color": "creamy white",
+    "category": "kitchen",
+    "style": "Vintage",
+    "dimensions": "5824x3264px / JPG",
+    "material": ""
+  },
+  {
+    "id": 9,
+    "name": "Vintage bedroom",
+    "url": "https://img.freepik.com/free-photo/bright-cozy-stylish-interior-bedroom-beautiful-rich-antique-furniture-four-poster-bed_8353-8034.jpg?t=st=1722800976~exp=1722804576~hmac=1c3e2d9196e24fb7fd7329ab085dba245a93a457da79ecdd2e311b8c487248d2&w=900",
+    "color": "white",
+    "category": "bedroom",
+    "style": "Vintage",
+    "dimensions": "7280x4080px / JPG",
+    "material": ""
+  },
+  {
+    "id": 10,
+    "name": "Rustic living room",
+    "url": "https://img.freepik.com/premium-photo/rustic-living-room-with-wood-walls-white-sofa-pillows-blanket-floor-lamp_971991-22175.jpg?w=900",
+    "color": "Brown ,white",
+    "category": "living room",
+    "style": "Rustic",
+    "dimensions": "5376x3584px / JPG",
+    "material": ""
+  },
+  {
+    "id": 11,
+    "name": "Rustic Kitchen",
+    "url": "https://img.freepik.com/premium-photo/rustic-kitchen-farmhouse-interior-wooden-cabinets-reclaimed-dining-table-metal-bar-stools-vintage-pendant-lights-brick-backsplash-exposed-wooden-beams-ceiling-large-window-view-Rusticside_124463-33097.jpg?w=900",
+    "color": "Brown ,white",
+    "category": "Kitchen",
+    "style": "Rustic",
+    "dimensions": "5376x3584px / JPG",
+    "material": ""
+  },
+  {
+    "id": 12,
+    "name": "Rustic bedroom",
+    "url": "https://img.freepik.com/free-photo/photorealistic-wooden-house-interior-with-timber-decor-furnishings_23-2151263545.jpg?t=st=1722804196~exp=1722807796~hmac=a81897e931f382009336686d514098b97413c8f8b1cfa9a7c2a2d9477191099e&w=900",
+    "color": "white , wood",
+    "category": "bedroom",
+    "style": "Rustic",
+    "dimensions": " 5696x3328px / JPG",
+    "material": ""
+  },
+  {
+    "id": 13,
+    "name": "Industrial living room",
+    "url": "https://img.freepik.com/premium-photo/minimalist-living-room-with-concrete-wall-black-couch-plant-pot_14117-821929.jpg?w=900",
+    "color": "black ,gray",
+    "category": "living room",
+    "style": "industrial",
+    "dimensions": "4368x2448px / JPG",
+    "material": ""
+  },
+  {
+    "id": 14,
+    "name": "Industrial kitchen",
+    "url": "https://img.freepik.com/free-photo/beautiful-kitchen-interior-design_23-2150976593.jpg?t=st=1722811875~exp=1722815475~hmac=101ca9503ba70c5ee34167d62d01c028f9e86eb315274c8c1b16fc429f64ae58&w=900",
+    "category": "kitchen",
+    "style": "Industrial",
+    "dimensions": "7000x5316px / JPG cm",
+    "material": ""
+  },
+  {
+    "id": 16,
+    "name": "Industrial bedroom",
+    "url": "https://img.freepik.com/premium-photo/industrial-style-bedroom-interior-design-black-white-palette-white-brick-walls_158674-67.jpg?w=900",
+    "color": "white , black , gray",
+    "category": "bedroom",
+    "style": "Industrial",
+    "dimensions": "6000x4000px / JPG",
+    "material": ""
+  },
+  {
+    "id": 17,
+    "name": "Minimalist living room",
+    "url": "https://img.freepik.com/premium-photo/minimalist-living-room-with-white-couch-wooden-coffee-table-plant-wicker-basket_36682-258128.jpg?w=900",
+    "color": "white",
+    "category": "living roo",
+    "style": "Minimalist",
+    "dimensions": "4368x2448px / JPG",
+    "material": ""
+  },
+  {
+    "id": 18,
+    "name": "Minimalist kitchen",
+    "url": "https://img.freepik.com/premium-photo/modern-minimalistic-kitchen-with-wood-fittings-window_641503-186806.jpg?w=900",
+    "color": "white",
+    "category": "kitchene",
+    "style": "Minimalist",
+    "dimensions": "6048x4032px / JPG",
+    "material": ""
+  },
+  {
+    "id": 19,
+    "name": "A minimalistic bedroom",
+    "url": "https://img.freepik.com/premium-photo/modern-bedroom-with-simple-elegant-bedding-stylish-lamp-minimalistic-decor-serene-retreat_875722-70554.jpg?w=900",
+    "color": "white",
+    "category": "bedroom",
+    "style": "minimalistic",
+    "dimensions": "5824x3264px / JPG",
+    "material": ""
+  },
+  {
+    "id": 20,
+    "name": "Bohemian living room",
+    "url": "https://img.freepik.com/premium-photo/living-room-with-couch-table-rug-wall_763111-306044.jpg?w=900",
+    "color": "nude",
+    "category": "living room",
+    "style": "Bohemian",
+    "dimensions": "6240x4338px / JPG",
+    "material": ""
+  },
+  {
+    "id": 15,
+    "name": "Bohemian   kitchen",
+    "url": "https://img.freepik.com/premium-photo/frame-mockup-nomadic-boho-kitchen-interior-with-rustic-decor_144721-8654.jpg?w=900",
+    "color": "nude , white ,wood",
+    "category": "kitchen",
+    "style": "Bohemian",
+    "dimensions": "8736x4896px / JPG",
+    "material": ""
+  },
+  {
+    "id": 23,
+    "name": "Bohemian  bedroom",
+    "url": "https://img.freepik.com/premium-photo/white-wooden-bedroom-interior-featuring-comfortable-bed-natural-color-scheme-soft-lighting-neutral-tones-bohemian-decor-elements_965119-58518.jpg?w=900",
+    "color": "nude , white ,wood",
+    "category": "bedroom",
+    "style": "Bohemian",
+    "dimensions": "5824x3264px / JPG",
+    "material": ""
+  }
+]
