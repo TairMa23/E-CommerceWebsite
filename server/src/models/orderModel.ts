@@ -28,9 +28,9 @@ class Item {
   @prop({ required: true })
   public name!: string;
   @prop({ required: true })
-  public quantity!: string;
+  public countInStock!: string;
   @prop({ required: true })
-  public image!: number;
+  public url!: number;
   @prop({ required: true })
   public price!: number;
   @prop({ ref: Product })

@@ -19,7 +19,7 @@ export default function PlaceOrderPage() {
   const round2 = (num: number) => Math.round(num * 100 + Number.EPSILON) / 100; // 123.2345 => 123.23
 
   cart.itemsPrice = round2(
-    cart.cartItems.reduce((a, c) => a + c.quantity * c.price, 0)
+    cart.cartItems.reduce((a, c) => a + c.countInStock * c.price, 0)
   );
   cart.shippingPrice = cart.itemsPrice > 100 ? round2(0) : round2(10);
   cart.taxPrice = round2(0.15 * cart.itemsPrice);
@@ -93,14 +93,14 @@ export default function PlaceOrderPage() {
                     <Row className="align-items-center">
                       <Col md={6}>
                         <img
-                          src={item.image}
+                          src={item.url}
                           alt={item.name}
                           className="img-fluid rounded thumbnail"
                         ></img>{" "}
                         <Link to={`/product/${item.slug}`}>{item.name}</Link>
                       </Col>
                       <Col md={3}>
-                        <span>{item.quantity}</span>
+                        <span>{item.countInStock}</span>
                       </Col>
                       <Col md={3}>${item.price}</Col>
                     </Row>

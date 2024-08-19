@@ -1,15 +1,15 @@
 export type CartItem = {
   _id: string;
   name: string;
-  slug: string;
+  slug?: string;
   url: string | undefined;
   color?: string;
-  price: number;
+  price?: number;
   countInStock: number;
-  rating: number;
-  numReviews: number;
-  description: string;
-  category: string;
+  rating?: number;
+  numReviews?: number;
+  description?: string;
+  category?: string;
   style?: string; // New field
 };
 

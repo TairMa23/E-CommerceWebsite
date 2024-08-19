@@ -12,15 +12,16 @@ export const convertProductToCartItem = (product: Product): CartItem => {
   const cartItem: CartItem = {
     _id: product._id,
     name: product.name,
-    slug: product.slug,
-    image: product.image,
-    price: product.price,
-    countInStock: product.countInStock,
-    quantity: 1,
-    color: product.color, // New field
-    style: product.style, // New field
-    dimensions: product.dimensions, // New field
-    material: product.material, // New field
+    slug: product.slug || "",
+    url: product.url || "",
+    price: product.price || 0,
+    countInStock: product.countInStock || 0,
+    color: product.color || "",
+    style: product.style || "",
+    rating: product.rating || 0,
+    numReviews: product.numReviews || 0,
+    description: product.description || "",
+    category: product.category || "",
   };
   return cartItem;
 };

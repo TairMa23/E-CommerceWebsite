@@ -158,14 +158,14 @@ export default function OrderPage() {
                     <Row className="align-items-center">
                       <Col md={6}>
                         <img
-                          src={item.image}
+                          src={item.url}
                           alt={item.name}
                           className="img-fluid rounded thumbnail"
                         ></img>{" "}
                         <Link to={`/product/${item.slug}`}>{item.name}</Link>
                       </Col>
                       <Col md={3}>
-                        <span>{item.quantity}</span>
+                        <span>{item.countInStock}</span>
                       </Col>
                       <Col md={3}>${item.price}</Col>
                     </Row>
