@@ -32,7 +32,12 @@ export default function SigninPage() {
       });
       dispatch({ type: "USER_SIGNIN", payload: data });
       localStorage.setItem("userInfo", JSON.stringify(data));
-      navigate(redirect);
+      if (data.isAdmin) {
+        console.log(navigate);
+        navigate("/admin");
+      } else {
+        navigate(redirect);
+      }
     } catch (err) {
       toast.error(getError(err as ApiError));
     }

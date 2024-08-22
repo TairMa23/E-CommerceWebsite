@@ -98,3 +98,7 @@ a.header-link:hover,
 .product-col {
   padding-bottom: 20px; /* מרווח בין המוצרים בתוך כל שורה */
 }
+.side-bar {
+  background-color: #1a153d;
+  height: 100vh;
+}

@@ -14,10 +14,12 @@
     "@tanstack/react-query": "^5.51.1",
     "@tanstack/react-query-devtools": "^5.51.1",
     "axios": "^1.7.2",
+    "mdb-react-ui-kit": "^8.0.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
+    "react-pro-sidebar": "^1.1.0",
     "react-router-bootstrap": "^0.26.3",
     "react-router-dom": "^6.24.1",
     "react-toastify": "^10.0.5"

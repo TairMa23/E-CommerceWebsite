@@ -1,7 +1,12 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "mongodb": "^6.8.0"
+    "flowbite-react": "^0.10.1",
+    "mdb-react-ui-kit": "^8.0.0",
+    "mongodb": "^6.8.0",
+    "ra-data-simple-rest": "^5.1.2",
+    "react-admin": "^5.1.2",
+    "react-custom-scrollbars-2": "^4.5.0"
   },
   "name": "e-commercewebsite",
   "version": "1.0.0",

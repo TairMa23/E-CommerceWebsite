@@ -25,6 +25,11 @@ import PlaceOrderPage from "./pages/PlaceOrderPage.tsx";
 import OrderPage from "./pages/OrderPage.tsx";
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import OrderHistoryPage from "./pages/OrderHistoryPage.tsx";
+import AdminPanel from "./admin/pages/AdminPanel.tsx";
+import PersonalProfile from "./components/PersonalProfile.tsx";
+import TodayDeal from "./components/TodayDeal.tsx";
+import Gifts from "./components/Gifts.tsx";
+import OnSale from "./components/OnSale.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +39,11 @@ const router = createBrowserRouter(
       <Route path="cart" element={<CartPage />} />
       <Route path="signin" element={<SigninPage />} />
       <Route path="signup" element={<SignupPage />} />
+      <Route path="Todays Deal" element={<TodayDeal />} />
+      <Route path="Gifts" element={<Gifts />} />
+      <Route path="On Sale" element={<OnSale />} />
+      <Route path="admin/*" element={<AdminPanel />} />
+      <Route path="profile" element={<PersonalProfile />} />
       <Route path="" element={<ProtectedRoute />}>
         <Route path="shipping" element={<ShippingAddressPage />} />
         <Route path="payment" element={<PaymentMethodPage />} />
