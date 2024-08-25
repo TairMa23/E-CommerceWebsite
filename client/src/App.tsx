@@ -85,26 +85,33 @@ function App() {
                 </Link>
 
                 {userInfo ? (
-                  <NavDropdown
-                    className="header-link"
-                    title={`Hello, ${userInfo.name}`}
-                  >
-                    <LinkContainer to="/profile">
-                      <NavDropdown.Item>User Profile</NavDropdown.Item>
-                    </LinkContainer>
-                    <LinkContainer to="/orderhistory">
-                      <NavDropdown.Item>Order History</NavDropdown.Item>
-                    </LinkContainer>
-                    <NavDropdown.Divider />
-                    <Link
-                      className="dropdown-item"
-                      to="#signout"
-                      onClick={signoutHandler}
+                  <>
+                    <NavDropdown
+                      className="header-link"
+                      title={`Hello, ${userInfo.name}`}
                     >
-                      {" "}
-                      Sign Out{" "}
-                    </Link>
-                  </NavDropdown>
+                      <LinkContainer to="/profile">
+                        <NavDropdown.Item>User Profile</NavDropdown.Item>
+                      </LinkContainer>
+                      <LinkContainer to="/orderhistory">
+                        <NavDropdown.Item>Order History</NavDropdown.Item>
+                      </LinkContainer>
+                      <NavDropdown.Divider />
+                      <Link
+                        className="dropdown-item"
+                        to="#signout"
+                        onClick={signoutHandler}
+                      >
+                        {" "}
+                        Sign Out{" "}
+                      </Link>
+                    </NavDropdown>
+                    {userInfo.isAdmin && (
+                      <Link to="/admin" className="nav-link header-link">
+                        Admin Dashboard
+                      </Link>
+                    )}
+                  </>
                 ) : (
                   <NavDropdown className="header-link" title={`Hello, sign in`}>
                     <LinkContainer to="/signin">

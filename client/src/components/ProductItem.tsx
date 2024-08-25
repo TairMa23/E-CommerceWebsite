@@ -41,10 +41,6 @@ function ProductItem({ product }: { product: Product }) {
         </Link>
         <Rating rating={product.rating} numReviews={product.numReviews} />
         <Card.Text>${product.price}</Card.Text>
-        <Card.Text>
-          <strong>Product ID:</strong> {product._id}
-        </Card.Text>{" "}
-        {/* Display the product ID */}
         {product.countInStock === 0 ? (
           <Button variant="light" disabled>
             Out of stock
