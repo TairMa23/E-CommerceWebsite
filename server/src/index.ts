@@ -8,6 +8,7 @@ import { orderRouter } from "./routers/orderRouter";
 import { productRouter } from "./routers/productRouter";
 import { seedRouter } from "./routers/seedRouter";
 import { userRouter } from "./routers/userRouter";
+import { auth } from "./middleware/auth";
 
 dotenv.config();
 
@@ -33,6 +34,7 @@ app.use(
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(auth);
 
 app.use("/api/products", productRouter);
 app.use("/api/users", userRouter);

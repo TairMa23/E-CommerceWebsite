@@ -1,4 +1,10 @@
-import { modelOptions, prop, getModelForClass } from "@typegoose/typegoose";
+import {
+  modelOptions,
+  prop,
+  getModelForClass,
+  Ref,
+} from "@typegoose/typegoose";
+import { UserPreference } from "./UserPreference";
 
 @modelOptions({ schemaOptions: { timestamps: true } })
 export class User {
@@ -11,6 +17,8 @@ export class User {
   public password!: string;
   @prop({ required: true, default: false })
   public isAdmin!: boolean;
+  @prop({ ref: () => UserPreference })
+  public preferences?: Ref<UserPreference>;
 }
 
 export const UserModel = getModelForClass(User);

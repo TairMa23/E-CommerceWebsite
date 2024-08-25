@@ -1,4 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+
+import { UserPreference } from "../models/UserPreference";
+
 /* eslint-disable @typescript-eslint/no-namespace */
 declare namespace Express {
   export interface Request {
@@ -8,6 +11,7 @@ declare namespace Express {
       email: string;
       isAdmin: boolean;
       token: string;
+      preferences: UserPreference | null;
     };
   }
 }
