@@ -8,7 +8,7 @@ function DashBoard() {
     <div>
       {" "}
       <Button onClick={() => setShowAddProduct(!showAddProduct)}>
-        {showAddProduct ? "Cancel" : "Add New Product"}
+        {showAddProduct ? "Cancel" : "Create New Products"}
       </Button>
       {showAddProduct && <AddProductForm />}{" "}
     </div>
